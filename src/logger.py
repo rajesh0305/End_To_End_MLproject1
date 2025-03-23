@@ -21,5 +21,18 @@ logging.basicConfig(
     format="[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s"
 )
 
+class Logger:
+    @staticmethod
+    def info(message):
+        logging.info(message)
+
+    @staticmethod
+    def error(message):
+        logging.error(message)
+
+    @staticmethod
+    def warning(message):
+        logging.warning(message)
+
 if __name__=="__main__":
   logging.info("logging has been configured successfully")
