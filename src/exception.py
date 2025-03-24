@@ -21,4 +21,11 @@ class CustomException(Exception):
     
 
 
-        
+        if __init__=="__main__":
+            try:
+                a = 10
+                b =0
+                c = a/b
+            except Exception as e:
+                raise CustomException(e,sys)
+            print("hello detecting error")
